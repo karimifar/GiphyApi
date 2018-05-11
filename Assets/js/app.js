@@ -7,7 +7,7 @@ var gifLimif;
 function getTheGif(){
 
     var apiKey= "LYN98rKmeVS0O88rAq9GO4ueFc5bwXyr";
-    var queryUrl= "http://api.giphy.com/v1/gifs/random?tag="+searchTerm+ "&apikey="+apiKey
+    var queryUrl= "https://api.giphy.com/v1/gifs/random?tag="+searchTerm+ "&apikey="+apiKey
     
     $.ajax({
         url: queryUrl,
@@ -23,7 +23,6 @@ function getTheGif(){
         console.log(searchTerm)
         console.log(response)
     })
-    
 
 }
 
