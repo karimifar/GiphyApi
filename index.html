@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giphy app</title>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="Assets/js/TimelineMax.min.js"></script>
+    <script src="Assets/js/TweenMax.min.js"></script>
+    <script src="Assets/js/EasePack.min.js"></script>
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/css/styles.css">
+   
+    
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="col-md-1"></div>
+      <div class="col-md-3 controls">
+
+          <form id="form">
+              Search for: 
+              <input type="text" id="search-input" class="inputs" placeholder="Ex: cats!"><br>
+              Number of random GIFS:
+              <input type="number" id="limit-input" min="1" max="20" placeholder="Default: 6" class="inputs">
+              <input id="submit-search" class="btn btn-outline-success" type="submit" value="Search for GIFs!">
+          </form>
+          <div id="buttons-here"></div>
+      </div>
+      <div class="col-md-7 results">
+          <div id="results-here"></div>
+      </div>
+      <div class="col-md-1"></div>
+      
+      
+      
+
+    </div>
+      
+    <script src="Assets/js/app.js"></script>
+  </body>
+
+
+
+  </html>
+  

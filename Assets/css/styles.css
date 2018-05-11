@@ -1,0 +1,74 @@
+.container{
+    margin-top: 2%;
+}
+
+#results-here{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.gif-holder{
+    height: 150px;
+    width: auto;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+img.gifs{
+    object-fit: cover;
+    height: 100%;
+
+}
+.results , .controls{
+    float:left;
+}
+
+.btn{
+    margin: 5px;
+}
+form{
+    font-size: 12px;
+    border: solid 1px;
+    border-color: black;
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.inputs{
+    margin: 0 0 30px 0px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+#submit-search{
+    width: 80%;
+    margin: 0 10%;
+    color: #D90368;
+    border-color: #D90368;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+
+}
+#submit-search:hover{
+background-color: #D90368;
+color: white;
+transform: scale(0.95);
+}
+
+/* .controls{
+    position: relative;
+    background-color: #D90368;
+    width:100%;
+    height: auto;
+}
+#form{
+    position: absolute;
+    /* right: 0;
+    bottom: 0; */
+} */
