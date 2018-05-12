@@ -2,7 +2,7 @@ var  things =[]
 var searchTerm;
 var btnsDiv= $("#buttons-here")
 var resultsDiv = $("#results-here")
-var gifLimif;
+var gifLimit;
 
 function getTheGif(){
 
@@ -29,11 +29,19 @@ function getTheGif(){
 $("#submit-search").on("click", function(event) {
     event.preventDefault();
     userInput= $("#search-input").val().trim();
-    if ($("#limit-input").val()===""){
+    if ($("#limit-input").val().trim()===""){
         gifLimit=6;
-    }else{
+        $("#warning").attr("class","invisible")
+
+    } else if(parseInt($("#limit-input").val().trim())>50){
+        $("#warning").text("That's too many GIFS! Try something less than 50!")
+        $("#warning").attr("class","visible")
+        return;
+    } else{
         gifLimit= parseInt($("#limit-input").val().trim());
+        $("#warning").attr("class","invisible")
     }
+
     if (userInput===""){
         return;
     }
@@ -66,10 +74,17 @@ $(document).on("click",".gif-btn", function(event){
     event.preventDefault();
     searchTerm=$(this).val()
     resultsDiv.empty();
-    if ($("#limit-input").val()===""){
+    if ($("#limit-input").val().trim()===""){
         gifLimit=6;
-    }else{
+        $("#warning").attr("class","invisible")
+
+    } else if(parseInt($("#limit-input").val().trim())>50){
+        $("#warning").text("That's too many GIFS! Try something less than 50!")
+        $("#warning").attr("class","visible")
+        return;
+    } else{
         gifLimit= parseInt($("#limit-input").val().trim());
+        $("#warning").attr("class","invisible")
     }
     for (i=1; i<=gifLimit; i++){
      getTheGif()

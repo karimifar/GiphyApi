@@ -25,12 +25,18 @@
 
       <div class="col-md-1"></div>
       <div class="col-md-3 controls">
+        <h1 id="headline">
+          Search Giphy!
+        </h1>
 
           <form id="form">
               Search for: 
               <input type="text" id="search-input" class="inputs" placeholder="Ex: cats!"><br>
               Number of random GIFS:
-              <input type="number" id="limit-input" min="1" max="20" placeholder="Default: 6" class="inputs">
+              <div id="limit">
+              <input type="number" id="limit-input" min="1" max="40" placeholder="Default: 6, Max:40!" class="inputs">
+              <div id="warning" class="invisible"></div>
+              </div>
               <input id="submit-search" class="btn btn-outline-success" type="submit" value="Search for GIFs!">
           </form>
           <div id="buttons-here"></div>
