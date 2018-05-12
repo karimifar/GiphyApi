@@ -100,7 +100,6 @@ transform: scale(0.95);
 .visible{
     opacity: 1;
 }
-
 .visible , .invisible{
     transition:  all 0.5s ease-in-out;
 }

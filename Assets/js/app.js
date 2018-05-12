@@ -57,7 +57,6 @@ $("#submit-search").on("click", function(event) {
     
 });
 
-
 function appendBtns(){
     btnsDiv.empty();
     for (i=0; i<things.length; i++){
